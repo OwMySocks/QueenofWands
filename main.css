@@ -1,0 +1,10 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 10px;
+}
+
+.nav li{
+	display: inline;
+}
