@@ -17,7 +17,7 @@
 	width:100%;
 	height:auto;
 	overflow:hidden;
-	position: absolute;
+	/*position: absolute;*/
 	left:0;
 	top:0;
 	opacity: 0.4;
