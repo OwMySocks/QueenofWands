@@ -14,6 +14,8 @@
 
 			<!-- Latest compiled JavaScript -->
 			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+			
+			
 	</head>
 	
 	<body>
@@ -45,27 +47,33 @@
 <p>Well, let's give it a shot.</p>
 		<!--Here's where I want to put the thingy!-->
 		<div class="game">
+			<!-- Monty game JavaScript -->
+			<script src="jquery.min.js"></script>
+			<script type="text/javascript" src="monty.js"></script>
+			
 			<div class="row">
 				<div class = "col-md-3">
 					<div class= "gamehost">
 						<p>Alright, pick a door!</p>
 					</div>
 				</div>
-				<div class = "col-md-3">
-					<div class = "door">
-						<p>Door 1</p>
+				<div class="doors">
+					<div class = "col-md-3">
+						<div class = "door" id="0">
+							<p>Door 1</p>
+						</div>
 					</div>
-				</div>
-				
-				<div class = "col-md-3">
-					<div class = "door">
-						<p>Door 2</p>
+					
+					<div class = "col-md-3" >
+						<div class = "door" id="1">
+							<p>Door 2</p>
+						</div>
 					</div>
-				</div>
-				
-				<div class = "col-md-3">
-					<div class = "door">
-						<p>Door 3</p>
+					
+					<div class = "col-md-3">
+						<div class = "door" id="2">
+							<p>Door 3</p>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -6,25 +6,23 @@
 }
 
 .game{
-	/*border-style:solid;
-	border-color:black;*/
 	position:relative;
-	/*padding:100px;*/
-	/*height:200px;*/
 	margin: 5px;
 }
 
 .door{
 	border-style:solid;
 	border-color:#222222;
-	/*padding:75px;*/
 	border-radius:10px;
 	height:200px;
 	width:220px;
 	margin:6px;
-	/*position:absolute;*/
-	
 }
+
+.door:hover{
+	box-shadow: 10px 10px 5px #888888;
+}
+
 .door p{
 	position: relative;
  	top: 50%;
@@ -41,4 +39,16 @@
 	position: relative;
  	top: 50%;
  	transform: translateY(-50%);
+}
+
+.pickDoor {
+	box-shadow: 10px 10px 5px #555555
+}
+
+.goat {
+	
+}
+
+.car{
+	
 }
