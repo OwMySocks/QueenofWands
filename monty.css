@@ -1,0 +1,44 @@
+.spoiler {
+	color:white;
+}
+.spoiler:hover {
+	background-color: black;
+}
+
+.game{
+	/*border-style:solid;
+	border-color:black;*/
+	position:relative;
+	/*padding:100px;*/
+	/*height:200px;*/
+	margin: 5px;
+}
+
+.door{
+	border-style:solid;
+	border-color:#222222;
+	/*padding:75px;*/
+	border-radius:10px;
+	height:200px;
+	width:220px;
+	margin:6px;
+	/*position:absolute;*/
+	
+}
+.door p{
+	position: relative;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	text-align:center;
+}
+
+.gamehost{
+	height:200px;
+	width:220px;
+}
+
+.gamehost p{
+	position: relative;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+}

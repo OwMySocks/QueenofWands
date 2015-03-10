@@ -4,7 +4,7 @@
 				<!-- My stylesheet -->
 			<link href="main.css" rel="stylesheet"/>
 			<!-- Monty stylesheet -->
-			<link href="monty.css" rel="stylesheet">
+			<link href="monty.css" rel="stylesheet"/>
 			<!--Bootstrap-->
 			<!-- Latest compiled and minified CSS -->
 			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -17,5 +17,65 @@
 	</head>
 	
 	<body>
+		<!-- section for navigation -->
+		<div class="nav">
+			<div class="container">
+			<ul class = "nav nav-tabs">
+				<li>
+					<a href='http://www.weirdsistersblog.com/queenofwands/about.html'>About</a>
+				</li>
+				<li>
+					<a href='http://www.weirdsistersblog.com/queenofwands'>Projects</a>
+				</li>
+				<li>
+					<a href='http://www.weirdsistersblog.com'>WeirdSisters</a>
+				</li>
+			</ul>
+			</div>
+		</div>
 		
+		<!--Main section-->
+		<div class="container">
+		<h1>The Monty Hall Problem</h1>
+		<p>I was introduced to the Monty Hall problem sometime in my freshman year of college. I didn't fully grasp the correct answer right away and it bounced around in my head for a while.</p>
+		<p>It so happened I was also having my first experiences with programming. Engineers in their first year at the University of Pittsburgh take a general "Intro to Engineering Computing" class that coveres a bunch of useful nuts and bolts like basic Unix operations, excel macros and the principles of programming in C++. At the time I went through the class, I was under the impression that I was probably crap with computers and that I'd have to scrape through the programming assignments by the skin of my teeth. This eventually changed, and one of the turning points in my attitude towards coding was how I wrapped my head around the Monty Hall problem. </p>
+		<p>The basic scenario of the problem is this: </p>
+		<p>You're on a game show! The host shows you three doors. Behind one of them, xie says, there is a brand new, shiny car. The other two? Goats. You get to pick one. After you make your initial pick, the host opens another door, revealing a goat. Now, you can either open your door, or switch to the other unopened door and open it. Which should you choose? Is there a winning strategy?</p>
+
+<p>Well, let's give it a shot.</p>
+		<!--Here's where I want to put the thingy!-->
+		<div class="game">
+			<div class="row">
+				<div class = "col-md-3">
+					<div class= "gamehost">
+						<p>Alright, pick a door!</p>
+					</div>
+				</div>
+				<div class = "col-md-3">
+					<div class = "door">
+						<p>Door 1</p>
+					</div>
+				</div>
+				
+				<div class = "col-md-3">
+					<div class = "door">
+						<p>Door 2</p>
+					</div>
+				</div>
+				
+				<div class = "col-md-3">
+					<div class = "door">
+						<p>Door 3</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- I need to have a spoiler tag -->
+		<br>
+		<div class="spoiler">
+			<p>You should switch. You will win 2/3rds of the time switching and only 1/3 of the time with your original choice.</p>
+		</div>
+		<p>If you don't quite get it, don't worry. Lots of people get this one wrong. It was knocking around my brain while I was bored and not paying attention in my computing class. At that point we had covered pretty much everything you need to make a simple text based rpg- if statements, for loops, and random number generations. I figured hey- I could simulate the Monty Hall problem, run it a bunch of times, and get empirical data to prove to me what the answer was. </p>
+		<p>As it turns out, I didn't even need to get that far before the solution to the problem became ubundantly clear. Writing out the simulation makes it clear exactly what scenarios are possible, and that in 2/3rds of them, you'll win by switching. </p>
+		</div>
 	</body>

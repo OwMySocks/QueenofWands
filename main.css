@@ -27,12 +27,12 @@
  
 }
 	
-
 .box{
 	width: 100%;
 	height:inherit;
 	position:relative;
 }
+
 
 .projecttext {
 	color:#222222;
@@ -43,6 +43,10 @@
 	z-index: 100;
 	text-shadow: 1px 1px #cccccc
 }
+
+/*.projecttext:hover {
+	color:#000000
+}*/
 
 .Flipimage{
 	-moz-transform: scale(-1, 1);
