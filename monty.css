@@ -17,6 +17,7 @@
 	height:200px;
 	width:220px;
 	margin:6px;
+	
 }
 
 .door:hover{
@@ -33,6 +34,7 @@
 .gamehost{
 	height:200px;
 	width:220px;
+	padding-top: 10px;
 }
 
 .gamehost p{
@@ -42,13 +44,17 @@
 }
 
 .pickDoor {
-	box-shadow: 10px 10px 5px #555555
+	box-shadow: 10px 10px 5px #555555;
 }
 
 .goat {
-	
+	background-image:url("images/goat1.jpg");
 }
 
 .car{
-	
+	background-image:url("images/car1.jpg");
 }
+
+/*.unclickable{}*/
+
+.swappick{}
