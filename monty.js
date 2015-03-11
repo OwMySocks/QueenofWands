@@ -1,3 +1,7 @@
+//3-10-15 still to do:
+//get counter object working
+//get text updating with counter
+//add button and reset capability
 var main =function(){
 	selectDoor();
 	var counts = new counter();
