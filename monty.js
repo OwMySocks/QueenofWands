@@ -1,5 +1,7 @@
 var main =function(){
 	selectDoor();
+	var counts = new counter();
+	alert(counts.swaps.toString());
 	
 };
 
@@ -39,11 +41,15 @@ var playGame = function(locs,pick){
 	var car = locs.indexOf('car');
 	var goat1 = locs.indexOf("goat");
 	var goat2 = locs.lastIndexOf("goat");
+	var currentPick = $('.pickDoor');
+	var done = false;
+	var swapclass;
+	var keepclass;
+	
 	document.getElementById("hosttext").innerHTML = "Now I'll reveal what's behind another door, and you can either choose your current door, or change to the remaining door."
 	// if car and picked are the same, I need to find what the other two doors are, pick one at random and show it. If they are not the same, I need to show the only remaining door.
 	//switch for picked
-	var swapclass;
-	var keepclass;
+	
 	if(car == picked){
 		var flip = Math.floor(Math.random()*2);
 		if (flip = 0){
@@ -79,14 +85,17 @@ var playGame = function(locs,pick){
 		keepclass="goat"
 		//$(document.getElementById(car.toString())).removeClass('unclickable');
 	}
-	var currentPick = $('.pickDoor');
+	
 	$('.door').click(function(){
 		var secondPick = this.id; //keep as string to do document.getElementByID(secondPick).addClass
 		if($(this).hasClass('swappick')){
 			//alert("You are swapping");
+			// counts.swaps=counts.swaps+1;
+			// alert(counts.swaps.toString());
 			currentPick.removeClass('pickDoor');
 			$(this).addClass('pickDoor');
 			$(this).addClass(swapclass);
+			state = 1;
 			
 		}
 		else if($(this).hasClass('pickDoor')){
@@ -98,6 +107,16 @@ var playGame = function(locs,pick){
 		}
 	});
 	
+}
+
+ function counter() {
+	this.swaps=0;
+	this.swapWin=0;
+	this.swapLoss=0;
+	this.keeps=0;
+	this.keepWin=0;
+	this.keepLoss=0;
+	this.games= swaps+keeps;
 }
 
 $(document).ready(main);
